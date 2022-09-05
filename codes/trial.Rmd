@@ -1,0 +1,15 @@
+---
+title: "Trial"
+author: "Seunghoon Yang"
+date: "2022-09-05"
+output: html_document
+---
+
+*We are going to study addition.*
+**We are going to study addition.**
+
+```{r}
+2+2
+```
+
+
