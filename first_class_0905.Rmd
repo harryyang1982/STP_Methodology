@@ -1,0 +1,14 @@
+---
+title: "first_class"
+author: "Seunghoon Yang"
+date: "2022-09-05"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+```
+
+## First Lecture
+
+Prof. Lee is trying to teach graduate students R with QCA.
