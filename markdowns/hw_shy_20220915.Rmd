@@ -1,0 +1,161 @@
+---
+title: "Using R Chapter1 HW"
+author: "Seunghoon Yang"
+date: "2022-09-15"
+output:
+  word_document: default
+  html_document: default
+---
+
+## Quizes
+### Quiz 1-1
+
+```{initial_packages echo=F}
+
+library(tidyverse)
+library(UsingR)
+
+
+```
+
+``` {r codes1}
+
+#1. 
+1 + 2 * (3 + 4)
+
+#2. 
+4 **3 + 3 **2 + 1
+## as same as the below
+4 ^3 + 3^2 + 1
+
+#3
+sqrt((4+3)*(2+1))
+
+#4
+((1+2)/(3+4))^2
+
+```
+
+
+### Quiz 1-2
+
+``` {r codes2}
+
+#1
+(2 + 3) - 4
+
+#2
+2 + (3 * 4)
+
+#3
+(2/3)/4
+
+#4
+2^(3^4)
+
+```
+
+
+### Quiz 1-3
+
+``` {r codes3}
+
+(1 + 2 * 3^4) / (5/6 - 7)
+
+
+```
+
+
+### Quiz 1-4
+
+``` {r codes4}
+
+(0.25 - 0.2) / sqrt(0.2 * (1 - 0.2) / 100)
+
+```
+
+
+### Quiz 1-5
+
+``` {r codes5}
+
+a <- 2
+b <- 3
+c <- 4
+d <- 5
+
+a * b * c * d
+```
+
+
+### Quiz 1-6: last value is 1770
+
+``` {r codes6}
+data(rivers)
+
+rivers
+```
+
+
+### Quiz 1-7
+
+``` {r codes7}
+
+library(UsingR)
+max(exec.pay)
+summary(exec.pay)
+
+```
+
+
+### Quiz 1-8
+
+``` {r codes8}
+
+mean(exec.pay)
+min(exec.pay)
+max(exec.pay)
+
+
+```
+
+
+### Quiz 1-9
+Trimmed mean is slightly smaller than the mean without any statistical treatment. Because trimmed mean dropped 10% of extreme values. Before adopting the trimming treatment, the maximum value was 2510. 
+
+``` {r codes9}
+
+mean(exec.pay)
+mean(exec.pay, trim=0.10)
+
+```
+
+
+### Quiz 1-10 : Three variables are Tree, age, and circumference
+
+``` {r codes10}
+
+data(Orange)
+names(Orange)
+
+```
+
+
+### Quiz 1-11 : 922.1429
+
+``` {r codes11}
+
+#1
+mean(Orange$age)
+
+```
+
+
+### Quiz 1-12 : 214
+
+``` {r codes12}
+
+max(Orange$circumference)
+
+```
+

@@ -12,4 +12,6 @@ output: html_document
 2+2
 ```
 
-
+```{r second}
+2**2
+```

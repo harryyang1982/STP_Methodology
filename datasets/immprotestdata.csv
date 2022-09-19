@@ -1,0 +1,109 @@
+Index,Metarea,City,State,Region,Latitude,Longitude,HouseElection,Metcode,ParticipantAvg,Duration(Median),Duration(Mean),Frequency,ImmigrantWorkersFreedomRide,NativityForeign,NativityNative(exclusingbothparentsFB),NativityUnknown,NativityBothParentsFB,UnionUnknown,UnionMember,UnionNotMember,NotHispanic,Hispanic,Unemployed,AtWork,Income_median
+7,"Birmingham-Hoover, AL",Birmingham,AL,Southeast,33.5207,-86.8025,Republican,1001,3500,2,2,1,1,35,661,0,4,656,4,40,699,1,10,333,26000
+41,"Huntsville, AL",Huntsville,AL,Southeast,34.7304,-86.5861,Republican,3440,5000,1,1,1,0,15,232,0,4,226,0,25,243,8,7,116,31000
+51,"Little Rock-North Little Rock, AR",Little Rock,AR,Southeast,34.7465,-92.2896,Democratic,4400,3000,1,1,1,1,20,478,1,8,458,1,48,494,13,7,260,26000
+69,"Phoenix-Mesa-Scottsdale, AZ",Phoenix,AZ,Southwest,33.448376,-112.074036,Republican,6201,45460,1,1.25,4,1,357,1426,11,202,1882,12,102,1306,690,40,882,30000
+101,"Tucson, AZ",Tucson,AZ,Southwest,32.25346,-110.911789,Republican,8520,3900,1,1.666666667,3,1,68,376,2,42,454,0,34,279,209,17,198,23200
+91,"Santa Rosa-Petaluma, CA",Santa Rosa,CA,West,38.44466,-122.7203,Democratic,7500,3225,1,1,2,0,31,131,1,11,162,5,7,133,41,3,81,21400
+86,"San Francisco-Oakland-Fremont, CA",San Francisco,CA,West,37.773972,-122.431297,Democratic,7365,3594.047619,1,1,11,2,621,969,18,297,1783,17,105,1360,545,53,924,25600
+89,"Santa Cruz-Watsonville, CA",Santa Cruz,CA,West,36.974117,-122.030792,Democratic,7481,1312.5,1.5,1.5,4,0,25,57,0,19,91,2,8,66,35,2,56,13600
+87,"San Jose-Sunnyvale-Santa Clara, CA",San Jose,CA,West,37.279518,-121.867905,Democratic,7401,62500,1,1,2,0,279,382,1,132,726,14,54,529,265,27,381,32000
+81,"Salinas, CA",Salinas,CA,West,36.677738,-121.655502,Democratic,7121,7033.333333,1,1,3,0,57,108,0,36,197,1,3,96,105,9,80,21000
+79,"Sacramento-Arden Arcade-Roseville, CA",Sacramento,CA,West,38.575764,-121.478851,Democratic,6921,8666.666667,1,1,3,1,196,609,3,85,847,12,34,642,251,27,394,26000
+97,"Stockton, CA",Stockton,CA,West,37.961632,-121.275604,Democratic,8120,6000,1,1,1,0,89,180,4,44,295,12,10,172,145,14,129,24856
+54,"Madera, CA",Madera,CA,West,36.95953,-120.062866,Democratic,4700,150,1,1,1,0,41,16,0,11,62,0,6,11,57,3,26,22550
+32,"Fresno, CA",Fresno,CA,West,36.746841,-119.772591,Democratic,2840,6800,1,1,4,0,79,245,4,60,367,3,18,246,142,25,140,20400
+88,"Santa Barbara-Santa Maria-Goleta, CA",Santa Barbara,CA,West,34.42083,-119.698189,Democratic,7471,15000,1,1,1,0,57,83,0,38,175,0,3,73,105,11,61,15800
+104,"Visalia-Porterville, CA",Visalia,CA,West,36.3302,-119.2921,Democratic,8781,150,1,1,2,0,54,93,0,45,184,0,8,86,106,9,64,24000
+6,"Bakersfield, CA",Bakersfield,CA,West,35.3733,-119.0187,Democratic,680,3475,1,1,5,0,94,257,0,65,398,4,14,226,190,16,161,25000
+52,"Los Angeles-Long Beach-Santa Ana, CA",Los Angeles,CA,West,34.0522,-118.2437,Democratic,4483,33805.55556,1,1.25,9,0,2823,3074,55,1560,7124,50,338,3659,3853,180,3405,22000
+76,"Riverside-San Bernadino, CA",Riverside,CA,West,33.95335,-117.396156,Democratic,6780,1200,1,1,6,1,349,977,16,253,1503,11,81,746,849,44,632,25000
+85,"San Diego-Carlsbad-San Marcos, CA",San Diego,CA,West,32.715736,-117.161087,Democratic,7321,4900,1,1.666666667,4,0,326,704,9,158,1128,10,59,783,414,18,579,26000
+10,"Boulder, CO",Boulder,CO,West,40.015,-105.2705,Republican,2082,150,1,1,1,0,44,273,0,22,318,1,20,270,69,12,153,23126
+23,"Denver-Aurora, CO",Denver,CO,West,39.74204,-104.99153,Republican,2083,30500,1,1,4,2,265,1717,7,129,1986,7,125,1590,528,73,1064,36000
+19,"Colorado Springs, CO",Colorado Springs,CO,West,38.8339,-104.8214,Republican,1720,1000,1,1,1,0,77,467,9,23,540,1,35,436,140,20,271,33560
+11,"Bridgeport-Stamford-Norwalk, CT",Bridgeport,CT,Northeast,41.1792,-73.1894,Republican,1161,3000,1,1,1,0,161,712,12,94,928,9,42,853,126,27,446,34000
+62,"New Haven, CT",New Haven,CT,Northeast,41.310726,-72.929916,Republican,5481,2375,1,1,2,1,85,525,6,50,613,9,44,595,71,21,332,37000
+38,"Hartford-West Hartford-East Hartford, CT",Hartford,CT,Northeast,41.76371,-72.685097,Republican,3284,1000,1,1,2,1,223,1027,22,149,1321,20,80,1212,209,36,673,35000
+105,"Washington, DC/MD/VA",Washington,DC,Northeast,47.751076,-120.740135,Democratic,8840,24044.44444,1,1,5,9,1075,4000,44,378,5110,32,355,4731,766,134,2775,32000
+67,"Pensacola-Ferry Pass-Brent, FL",Pensacola,FL,Southeast,30.433283,-87.240372,Republican,6081,1000,1,1,1,0,12,179,3,3,186,1,10,192,5,8,99,20800
+92,"Sarasota-Bradenton-Venice, FL",Sarasota,FL,Southeast,27.341274,-82.528267,Republican,7511,100,1,1,1,0,33,213,4,19,254,0,15,234,35,3,130,24000
+98,"Tampa-St. Petersburg-Clearwater, FL",Tampa,FL,Southeast,27.964157,-82.452606,Republican,8280,1600,1,1,2,0,211,984,10,82,1198,3,86,1055,232,28,595,23000
+30,"Fort Myers-Cape Coral, FL",Fort Myers,FL,Southeast,26.640629,-81.872307,Republican,2700,38000,1,1,2,0,68,164,0,31,246,0,17,198,65,4,116,15000
+66,"Orlando, FL",Orlando,FL,Southeast,28.538336,-81.379234,Republican,5960,11000,1,1,2,1,244,680,6,97,935,8,84,749,278,29,502,25000
+58,"Miami-Fort Lauderdale-Miami Beach, FL",Miami,FL,Southeast,25.761681,-80.191788,Republican,5001,1946.666667,1,1.1,8,0,1213,1175,9,502,2705,9,185,1641,1258,54,1381,20000
+4,"Atlanta-Sandy Springs-Marietta, GA",Atlanta,GA,Southeast,33.749,-84.388,Republican,521,43166.66667,1,1,3,1,271,1525,32,94,1802,7,113,1715,207,47,932,32000
+24,"Des Moines, IA",Des Moines,IA,Midwest,41.61955,-93.59802,Republican,2120,5500,1,1,1,1,22,637,2,14,609,11,55,638,37,18,352,36000
+8,"Boise City-Nampa, ID",Boise City,ID,West,43.6187,-116.2146,Republican,1081,4000,1,1,1,1,82,873,1,28,918,3,63,835,149,17,462,30000
+13,"Champaign-Urbana, IL",Champaign,IL,Midwest,40.1164,-88.2434,Democratic,1401,1000,1,1,1,0,11,98,0,3,101,2,9,112,0,4,51,24252
+17,"Chicago-Naperville-Joliet, IL-IN-WI",Chicago,IL,Midwest,41.8781,-87.6298,Democratic,1605,44327.77778,1,1,9,0,897,3909,37,545,5034,67,287,4283,1105,170,2451,30000
+95,"South Bend-Mishawaka, IN",South Bend,IN,Midwest,41.6764,-86.252,Republican,7800,3000,1,1,1,0,9,195,1,5,195,0,15,203,7,8,91,30500
+42,"Indianapolis, IN",Indianapolis,IN,Midwest,40.26719,-86.134903,Republican,3480,10000,1,1,1,1,48,909,3,12,902,10,60,945,27,31,468,38000
+53,"Louisville, KY/IN",Louisville,IN,Midwest,38.328732,-85.764771,Republican,4520,500,1,1,2,1,36,691,7,9,675,8,60,721,22,24,366,26000
+31,"Fort Wayne, IN",Fort Wayne,IN,Midwest,41.09384,-85.139236,Republican,2760,1000,1,1,1,0,6,197,1,0,194,1,9,202,2,4,95,32000
+106,"Wichita, KS",Wichita,KS,Midwest,37.697948,-97.314835,Republican,9040,4000,1,1,1,1,34,663,1,19,661,7,49,648,69,28,340,29000
+45,"Kansas City, MO/KS",Kansas City,KS,Midwest,39.015697,-94.565559,Republican,3760,2000,1,1,2,1,126,1460,13,60,1503,13,143,1480,179,59,818,36000
+49,"Lexington-Fayette, KY",Lexington,KY,Southeast,38.0406,-84.5037,Republican,4280,3530,1,1,2,0,19,238,0,0,252,0,5,248,9,10,124,25000
+63,"New Orleans-Metairie-Kenner, LA",New Orleans,LA,Southeast,29.951065,-90.071533,Republican,5561,3000,1,1,1,1,40,579,6,11,582,7,47,610,26,10,273,18460
+48,"Leominster-Fitchburg-Gardner, MA",Leominster,MA,Northeast,42.5251,-71.7598,Democratic,2601,500,1,1,1,0,7,83,5,5,92,4,4,88,12,2,47,32565
+9,"Boston-Cambridge-Quincy, MA-NH",Boston,MA,Northeast,42.3601,-71.0589,Democratic,1124,6333.333333,1,1,3,0,491,2586,20,262,3076,40,243,3107,252,93,1649,32720
+82,"Salisbury, MD",Salisbury,MD,Northeast,38.3607,-75.5994,Democratic,7130,200,1,1,1,0,4,91,0,2,89,2,6,93,4,1,49,30000
+71,"Portland-South Portland, ME",Portland,ME,Northeast,43.6891,-70.2568,Democratic,6401,150,1,1,1,0,28,711,1,16,699,6,51,743,13,20,399,29000
+33,"Grand Rapids-Wyoming, MI",Grand Rapids,MI,Midwest,42.963795,-85.670006,Republican,3001,7000,1,1,1,0,11,250,4,3,246,4,18,250,18,11,127,32700
+99,"Toledo, OH/MI",Toledo,MI,Midwest,41.651031,-83.541939,Republican,8400,300,1,1,1,1,10,320,0,8,312,6,20,312,26,17,155,31008
+25,"Detroit-Warren-Livonia, MI",Detroit,MI,Midwest,42.33142,-83.04575,Republican,2161,17775,1,1.333333333,3,1,214,2207,41,123,2396,39,150,2474,111,86,1100,30000
+60,"Minneapolis-St. Paul-Bloomington, MN/WI",Minneapolis,MN,Midwest,44.986656,-93.258133,Both,5121,35000,1,1,1,0,307,2165,29,141,2432,48,162,2476,166,66,1403,36250
+96,"St. Louis, MO/IL",St. Louis,MO,Midwest,38.627,-90.1994,Republican,7040,5000,1,1,1,1,56,1454,5,27,1405,20,117,1516,26,52,738,30000
+43,"Jackson, MS",Jackson,MS,Southeast,32.298756,-90.184807,Both,3560,450,1,1,1,1,0,395,5,3,372,0,31,395,8,9,191,31000
+57,"Memphis, TN/AR/MS",Memphis,MS,Southeast,35.002865,-89.99766,Democratic,4920,10000,1,1,1,1,49,468,3,23,502,2,39,501,42,18,221,25000
+39,"Hickory-Morganton-Lenoir, NC",Hickory,NC,Southeast,35.7345,-81.3445,Republican,3291,200,1,1,1,0,9,90,3,5,104,0,3,98,9,4,50,29000
+15,"Charlotte-Gastonia-Concord, NC/SC",Charlotte,NC,Southeast,35.2271,-80.8431,Republican,1521,1287.5,1,1,3,1,99,676,13,19,734,1,72,720,87,23,418,26000
+108,"Winston-Salem, NC",Winston,NC,Southeast,36.099861,-80.244217,Republican,3121,1500,1,1,1,0,2,92,0,2,84,0,12,92,4,2,44,24500
+34,"Greensboro-High Point, NC",Greensboro,NC,Southeast,36.044659,-79.766235,Republican,3122,1000,1,1,1,0,35,536,3,15,547,0,42,564,25,19,282,26317
+26,"Durham, NC",Durham,NC,Southeast,35.99403,-78.89862,Republican,6641,2025,1,1,2,1,21,107,0,5,126,0,NA,114,19,7,61,28000
+29,"Fayetteville, NC",Fayetteville,NC,Southeast,35.052666,-78.878357,Republican,2560,5000,1,1,1,0,11,183,1,0,185,0,10,190,5,2,98,30000
+74,"Raleigh-Carey, NC",Raleigh,NC,Southeast,35.787743,-78.644257,Republican,6642,156.6666667,1,1,4,0,70,643,9,17,684,0,55,689,50,17,367,30000
+107,"Wilmington, NC",Wilmington,NC,Southeast,34.225727,-77.94471,Republican,9200,100,2,2,1,0,1,3,2,0,6,0,0,6,0,0,3,9120
+35,"Greenville, NC",Greenville,NC,Southeast,35.612659,-77.366356,Republican,3150,3000,1,1,1,1,9,233,0,1,220,1,22,240,3,6,117,16000
+50,"Lincoln, NE",Lincoln,NE,Midwest,40.38136,-96.7026,Republican,4360,4000,1,1,1,0,13,193,0,7,193,3,17,205,8,0,127,32532
+65,"Omaha-Council Bluffs, NE/IA",Omaha,NE,Midwest,41.25716,-95.995102,Republican,5921,4816.666667,1,1,3,1,90,1238,6,37,1250,9,112,1241,NA,40,675,33000
+100,"Trenton-Ewing, NJ",Trenton,NJ,Northeast,40.217052,-74.742935,Both,8481,1100,1,1,2,0,23,112,0,14,141,2,6,126,23,7,74,34000
+1,"Albuquerque, NM",Albuquerque,NM,Southwest,34.0844,-106.6504,Republican,200,1250,1,1,2,1,108,824,6,39,905,9,63,513,464,21,483,27000
+90,"Santa Fe, NM",Santa Fe,NM,Southwest,35.69154,-105.944183,Republican,7490,2000,2,2,1,0,16,100,0,3,115,0,4,48,71,4,65,19000
+47,"Las Vegas-Paradise, NV",Las Vegas,NV,West,36.114647,-115.172813,Republican,4130,2287.5,1,1,4,0,561,1608,4,253,2240,19,167,1701,725,54,1180,27000
+78,"Rochester, NY",Rochester,NY,Northeast,43.16103,-77.610924,Democratic,6840,250,1,1,1,0,24,483,6,23,489,4,43,498,38,22,237,28000
+64,"New York-Northern New Jersey-Long Island, NY-NJ-PA",New York,NY,Northeast,40.73061,-73.935242,Democratic,5606,22240,1,1.25,4,9,2839,5371,151,1387,9097,185,466,7380,2368,211,4351,27000
+21,"Columbus, OH",Columbus,OH,Midwest,39.94174,-82.99217,Republican,1840,3000,1,1,1,1,56,831,8,11,836,13,57,869,37,34,439,32000
+18,"Cleveland-Lorain-Mentor, OH",Cleveland,OH,Midwest,41.4993,-81.6944,Republican,1681,1800,1,1,1,0,72,1041,6,36,1087,9,59,1110,45,28,531,30000
+102,"Tulsa, OK",Tulsa,OK,Southwest,36.15398,-95.992775,Republican,8560,3000,1,1,1,1,34,572,1,8,573,3,39,588,27,6,300,28000
+28,"Eugene-Springfield, OR",Eugene,OR,West,44.052071,-123.08675,Republican,2400,350,1,1,2,0,18,227,0,3,238,1,9,233,15,6,123,18000
+80,"Salem, OR",Salem,OR,West,44.944099,-123.040283,Republican,7080,8500,1.5,1.5,2,0,44,246,0,28,300,1,17,244,74,18,133,23000
+56,"Medford, OR",Medford,OR,West,42.326515,-122.875595,Republican,4890,500,1,1,1,0,10,147,0,2,150,2,7,147,12,9,68,13700
+72,"Portland-Vancouver-Beaverton, OR/WA",Portland,OR,West,45.512794,-122.679565,Republican,6442,3400,1,1,3,0,248,1354,4,115,1608,15,98,1505,216,43,840,30000
+70,"Pittsburg, PA",Pittsburg,PA,Northeast,40.440624,-79.995888,Republican,6280,100,1,1,1,1,44,1257,2,42,1248,19,78,1322,23,33,629,25000
+37,"Harrisburg-Carlisle, PA",Harrisburg,PA,Northeast,40.26368,-76.890739,Republican,3241,200,1,1,1,0,19,272,2,16,284,2,23,284,25,13,166,32000
+2,"Allentown-Bethlehem-Easton, PA/NJ",Allentown,PA,Northeast,40.6084,-75.4902,Republican,240,500,1,1,1,0,45,352,2,29,392,2,34,381,47,22,199,21500
+68,"Philadelphia-Camden-Wilmington, PA/NJ/DE",Philadelphia,PA,Northeast,39.95258,-75.165222,Republican,6161,2172.666667,1,1,4,1,440,3920,16,179,4172,56,327,4213,342,93,2121,30000
+73,"Providence-Fall River-Warwick, MA-RI",Providence,RI,Northeast,41.82682,-71.402931,Democratic,6483,2000,1,1,1,1,504,2706,54,317,3343,23,215,3130,451,114,1659,27600
+36,"Greenville-Spartanburg-Anderson, SC",Greenville,SC,Southeast,34.852619,-82.394012,Republican,3160,2500,1,1,1,0,0,66,0,0,62,0,4,66,0,2,39,18100
+20,"Columbia, SC",Columbia,SC,Southeast,34.0007,-81.0348,Republican,1760,4000,1,1,1,0,26,375,5,3,379,1,29,400,9,11,188,21000
+14,"Charleston-North Charleston, SC",Charleston,SC,Southeast,32.7762,-79.9311,Republican,1440,4000,1,1,1,1,12,370,0,3,368,1,16,385,0,7,166,30000
+94,"Sioux Falls, SD",Sioux Falls,SD,Midwest,43.5446,-96.7311,Democratic,7760,300,1,1,1,0,NA,651,5,11,664,3,56,675,48,10,410,30000
+61,"Nashville-Davidson-Murfreesboro, TN",Nashville,TN,Southeast,36.174465,-86.76796,Democratic,5361,12000,1,1,1,1,52,565,0,10,579,6,42,583,44,19,315,25000
+16,"Chattanooga, TN/GA",Chattanooga,TN,Southeast,35.0456,-85.3097,Democratic,1560,450,1,1,2,0,24,196,0,4,198,1,25,197,27,2,107,17500
+46,"Knoxville, TN",Knoxville,TN,Southeast,35.964668,-83.926453,Democratic,3840,1550,1,1,2,1,8,272,0,7,279,1,7,279,8,4,127,25000
+44,"Johnson City, TN",Johnson City,TN,Southeast,36.3134,-82.3535,Democratic,3661,300,1,1,1,0,1,95,0,2,90,2,6,98,0,4,48,12000
+27,"El Paso, TX",El Paso,TX,Southwest,31.77254,-106.46095,Republican,2310,3000,1,1.666666667,3,1,142,213,0,92,424,2,21,59,388,14,186,15000
+84,"San Antonio, TX",San Antonio,TX,Southwest,29.424122,-98.493629,Republican,7240,18000,1,1,2,1,110,690,0,NA,827,5,34,304,562,25,377,21000
+5,"Austin-Round Rock, TX",Austin,TX,Southwest,30.2672,-97.7431,Republican,641,10000,1,1,1,1,84,572,2,28,646,2,38,426,260,17,354,29000
+12,"Brownsville-Harlingen, TX",Brownsville,TX,Southwest,25.9017,-97.4975,Republican,1241,90,1,1,2,0,62,77,0,36,172,0,3,10,165,4,53,14000
+22,"Dallas-Fort Worth-Arlington, TX",Dallas,TX,Southwest,32.89748,-97.04044,Republican,1922,13757.14286,1,1.214285714,8,1,555,1857,35,234,2498,15,168,1838,843,78,1281,32000
+40,"Houston-Baytown-Sugar Land, TX",Houston,TX,Southwest,29.7604,-95.3698,Republican,3362,NA,1,1,4,0,576,1598,3,239,2251,12,153,1439,977,63,1099,25000
+83,"Salt Lake City, UT",Salt Lake City,UT,West,40.758701,-111.876183,Republican,7161,20000,1,1,1,2,179,1459,15,66,1618,6,95,1473,246,44,835,32937
+77,"Roanoke, VA",Roanoke,VA,Southeast,37.270969,-79.941429,Republican,6800,25,1,1,1,0,3,130,0,3,124,0,12,131,5,4,62,24250
+75,"Richmond, VA",Richmond,VA,Southeast,37.646152,-77.511429,Republican,6761,4000,1,1,1,0,54,520,3,15,547,1,44,567,25,17,299,29000
+103,"Virginia Beach-Norfolk-Newport News, VA/NC",Virginia Beach,VA,Southeast,36.86314,-76.015778,Republican,5721,1000,1,1,1,1,41,696,1,18,702,6,48,711,45,7,381,25000
+93,"Seattle-Tacoma-Bellevue, WA",Seattle,WA,West,47.608013,-122.335167,Democratic,7601,33750,1,1,2,0,256,1416,13,97,1652,21,109,1666,116,45,859,31750
+109,"Yakima, WA",Yakima,WA,West,46.60207,-120.505898,Democratic,9260,1650,1,1,4,2,38,112,0,36,177,1,8,100,86,10,78,16900
+59,"Milwaukee-Waukesha-West Allis, WI",Milwaukee,WI,Midwest,43.038902,-87.906471,Both,5081,30000,1,1,2,1,109,900,1,45,993,8,54,898,157,28,496,31000
+55,"Madison, WI",Madison,WI,Midwest,36.174465,-86.76796,Both,4720,6500,1,1,2,1,51,366,3,13,400,7,26,405,28,5,227,32000
