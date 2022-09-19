@@ -90,7 +90,7 @@ str(text_factor2)
 
 # importing data
 
-cat <- read_csv("datasets/Knightley.csv")
+Cat <- read_csv("datasets/Knightley.csv")
 cat
 
 summary(lm(Weight ~ Caloric_Intake + Sleep + Urination, data = cat))
@@ -102,4 +102,25 @@ cat
 
 summary(lm(Weight ~ Caloric_Intake + Sleep + Urination + Foodfrequency, data = cat))
 write.csv(cat, "datasets/cat.csv")
+
+numbers <- 1:20
+numbers
+
+
+numbers <- c(1:7, 9:20)
+numbers
+
+rm(list=ls())
+
+# df from scratch
+
+fruits <- c("Apple", "Banana", "Orange", "Lemon")
+price <- c(0.1, 0.55, 0.78, 0.4)
+color <- c("red", "yellow", "orange", "yellow")
+data_fruits <- data.frame(fruits, price, color)
+data_fruits
+
+# list
+list_cat_fruits <- list(data_fruits, Cat)
+list_cat_fruits
 

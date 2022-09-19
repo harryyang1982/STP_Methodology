@@ -166,3 +166,9 @@ numbers
 numbers[2] <- 100 #replace the second observation with 100
 numbers 
 
+# Practice
+df1 <- data.frame(food = c("Curry Rice", "Boiled Rice", "Steak", "Ramen", "Pizza"),
+                  description = c("Indian Stew with Rice", "Boiled Rice in Chinese Style", "Cooked Beef", "Instant Noodle", "Italian Ddeok"),
+                  rating = c(4, 3, 5, 4, 3.5))
+df1
+write.csv(df1, "datasets/favorite_food.csv")
