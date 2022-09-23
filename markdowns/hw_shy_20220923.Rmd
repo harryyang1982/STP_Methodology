@@ -1,0 +1,94 @@
+---
+title: "2nd Homework (STP702)"
+author: "Seunghoon Yang"
+date: "2022-09-23"
+output: html_document
+---
+
+### Get the working directory 
+But I don't need to setup a different working directory because I built a project folder using the project function of RStudio.
+```{r}
+
+getwd()
+
+```
+
+### Create a Vector Using c() function
+```{r}
+c(1, 2, 0, 2, 4, 5, 10, 1)
+
+v1 <- c(1, 2, 0, 2, 4, 5, 10, 1)
+v1
+
+class(v1)
+```
+
+### Calculate Descriptive Statistics for A Vector
+```{r}
+
+length(v1) # size of a sample / number of observations
+
+mean(v1)
+sum(v1) / length(v1) ### so-called average/mean
+
+var(v1)
+sum((v1-mean(v1))^2) / (length(v1)-1) # sample variance
+
+sd(v1)
+sqrt(var(v1)) # sample's standard deviation
+
+max(v1) # sample's maximum observation value
+min(v1) # sample's minimum observation value
+
+```
+
+### Handle Missing Values in Descriptive Statistics
+
+```{r}
+v2 <- c(1, 2, 0, 2, NA, 5, 10, NA)
+mean(v2)
+
+# compute mean after removing NA values
+mean(v2, na.rm = TRUE)
+
+# display output from is.na() function
+is.na(v2)
+
+# display output from !is.na() function
+!is.na(v2)
+
+# find total number of observations in v2
+length(v2)
+
+# find the number of missing values in v2
+sum(is.na(v2))
+
+# find the number of non-missing values in v2
+sum(!is.na(v2))
+```
+
+### Convert a vector to a data-frame
+
+```{r}
+
+vd <- data.frame(v1)
+vd
+
+vd <- data.frame(v1, v2)
+vd
+
+```
+
+### Simple Toy Program: Create, Describe, and Graph a Variable
+
+```{r}
+c(1, 2, 0, 2, 4, 5, 10, 1)
+
+v1 <- c(1, 2, 0, 2, 4, 5, 10, 1)
+
+# call v1 to see what is it in
+v1
+
+# identify object type of v1
+class(v1)
+```
