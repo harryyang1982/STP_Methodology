@@ -1,0 +1,30 @@
+---
+title: "Most Beautiful Graphs ever"
+author: "Seunghoon Yang"
+date: "2022-10-14"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+esg <- read_csv('../datasets/ESG2017.csv')
+
+```
+
+```{r}
+
+
+
+ggplot(esg, aes(x = `ESG Disc Score:Y`,
+                y = `Revenue T12M`)) + 
+  geom_point(aes(color = `GICS SubInd Name`)) +
+  geom_smooth(method = 'lm') +
+  facet_wrap(~`GICS Sector`) +
+  labs(title = "ESG Discovery Score and Revenue",
+       subtitle = "Partitioned by GICS Sector and Colored by GICS Sub-Industry Name",
+       caption = "Source from Prof. DSLee")
+
+
+
+
+```

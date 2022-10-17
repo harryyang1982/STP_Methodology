@@ -1,0 +1,18 @@
+---
+title: "graph"
+author: "Seunghoon Yang"
+date: "2022-10-04"
+output: html_document
+---
+
+### Graphs explaining the relation between the median income of the cities and the average participant numbers.
+
+```{r}
+library(tidyverse)
+
+df_protest <- read_csv("../datasets/immprotestdata.csv")
+ggplot(df_protest, aes(x = Income_median, y = ParticipantAvg)) +
+  geom_point(aes(color = State)) +
+  geom_smooth(method = 'lm', se=FALSE)
+
+```
