@@ -1,0 +1,107 @@
+---
+title: "Homework 5"
+author: "Seunghoon Yang"
+date: "2022-10-23"
+output: html_document
+---
+
+### Setup
+Load packages and my own datasets.
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(readxl)
+
+edustat <- read_excel("../datasets/edustat_부울경.xlsx")
+files_list <- list.files(path = "../datasets", pattern = "*.xlsx")[-1]
+df_list <- map(str_c("../datasets/", files_list), read_excel, skip = 1)
+industry <- bind_rows(df_list) %>% 
+  fill(시점) %>% 
+  mutate(지역 = c(rep("부산", 316), rep("경남", 320), rep("서울", 302), rep("울산", 294))) %>% 
+  mutate_at(3:44, as.numeric)
+
+```
+
+```{r data_wrangling}
+
+edustat_seoul <- edustat %>% 
+  filter(시도 == "서울" & 대계열 == "공학계열")
+
+edustat_gn <- edustat %>% 
+  filter(시도 == "경남" & 대계열 == "공학계열")
+edustat_bsn <- edustat %>% 
+  filter(시도 == "부산" & 대계열 == "공학계열")
+edustat_usn <- edustat %>% 
+  filter(시도 == "울산" & 대계열 == "공학계열")
+
+edustat_sum_seoul <- edustat_seoul %>% 
+  group_by(year, 중계열, 과정구분) %>% 
+  summarize(졸업자_남자_비중 = mean(졸업자중남자, na.rm = TRUE),
+            졸업자_여자_비중 = mean(졸업자중여자, na.rm = TRUE),
+            취업자_남자_비중 = mean(취업자중남자, na.rm = TRUE),
+            취업자_여자_비중 = mean(취업자중여자, na.rm = TRUE),
+            전체_취업률 = mean(취업률_계, na.rm = TRUE),
+            남자_취업률 = mean(남자취업률, na.rm = TRUE),
+            여자_취업률 = mean(여자취업률, na.rm = TRUE))
+
+edustat_sum_gn <- edustat_gn %>% 
+  group_by(year, 중계열, 과정구분) %>% 
+  summarize(졸업자_남자_비중 = mean(졸업자중남자, na.rm = TRUE),
+            졸업자_여자_비중 = mean(졸업자중여자, na.rm = TRUE),
+            취업자_남자_비중 = mean(취업자중남자, na.rm = TRUE),
+            취업자_여자_비중 = mean(취업자중여자, na.rm = TRUE),
+            전체_취업률 = mean(취업률_계, na.rm = TRUE),
+            남자_취업률 = mean(남자취업률, na.rm = TRUE),
+            여자_취업률 = mean(여자취업률, na.rm = TRUE))
+
+edustat_sum_bsn <- edustat_bsn %>% 
+  group_by(year, 중계열, 과정구분) %>% 
+  summarize(졸업자_남자_비중 = mean(졸업자중남자, na.rm = TRUE),
+            졸업자_여자_비중 = mean(졸업자중여자, na.rm = TRUE),
+            취업자_남자_비중 = mean(취업자중남자, na.rm = TRUE),
+            취업자_여자_비중 = mean(취업자중여자, na.rm = TRUE),
+            전체_취업률 = mean(취업률_계, na.rm = TRUE),
+            남자_취업률 = mean(남자취업률, na.rm = TRUE),
+            여자_취업률 = mean(여자취업률, na.rm = TRUE))
+
+edustat_sum_usn <- edustat_usn %>% 
+  group_by(year, 중계열, 과정구분) %>% 
+  summarize(졸업자_남자_비중 = mean(졸업자중남자, na.rm = TRUE),
+            졸업자_여자_비중 = mean(졸업자중여자, na.rm = TRUE),
+            취업자_남자_비중 = mean(취업자중남자, na.rm = TRUE),
+            취업자_여자_비중 = mean(취업자중여자, na.rm = TRUE),
+            전체_취업률 = mean(취업률_계, na.rm = TRUE),
+            남자_취업률 = mean(남자취업률, na.rm = TRUE),
+            여자_취업률 = mean(여자취업률, na.rm = TRUE))
+
+industry_subset <- industry %>% 
+  mutate(여성비율 = `학사(여)` / 학사) %>% 
+  rename(산업별 = `산업별(1)`) %>% 
+  filter(산업별 %in% c("기계", "디스플레이", "반도체", "섬유", "자동차", "전자", "철강", "화학", "바이오ㆍ헬스"))
+
+```
+
+### Visualize Stats
+
+```{r data_visualizations}
+
+library(extrafont)
+theme_set(theme_gray(base_family='AppleGothic'))
+
+industry_subset %>% 
+  pivot_longer(names_to = "gender", cols = 남:여)  %>% 
+  ggplot(aes(x = 시점, y = value, fill = gender)) +
+  geom_col(position = "dodge") +
+  facet_wrap(~지역)
+
+edustat_sum_gn %>% 
+  ggplot(aes(x = 중계열, y = 취업자_여자_비중)) +
+  geom_boxplot(aes(fill = 중계열))
+
+edustat_sum_gn %>% 
+  ggplot(aes(x = 취업자_여자_비중)) +
+  geom_density() +
+  facet_wrap(~year)
+
+```
+
