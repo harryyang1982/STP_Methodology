@@ -1,0 +1,128 @@
+---
+title: "Panel Regression dealing with Fixed Effects"
+author: "Seunghoon Yang"
+date: "2022-10-15"
+output: html_document
+---
+
+Through the two datasets, I would like to verify that Busan, Ulsan, Gyeongnam, and Seoul have regional variations in admission, employment, and maintenance of employment status of female engineering personnel.
+
+### Loading Packages
+
+```{r setup}
+library(tidyverse)
+library(readxl)
+library(modelr)
+library(plm)
+
+```
+
+
+### Loading Datasets
+The first dataset is "학교 학과별 데이터넷" for understanding the numbers and ratio of female students. It is imported from 'https://kess.kedi.re.kr/index'.
+
+The second dataset is "산업기술인력 실태조사" for understanding the numbers and ratio of female engineers in the field. It is imported from 'https://kosis.kr/statisticsList/statisticsListIndex.do?menuId=M_01_01&vwcd=MT_ZTITLE&parmTabId=M_01_01&outLink=Y&parentId=D.1;D_18.2;#D_18.2'
+
+``` {r loading_stats, message = FALSE, warning = FALSE}
+
+edustat <- read_excel("../datasets/edustat_부울경.xlsx")
+files_list <- list.files(path = "../datasets", pattern = "*.xlsx")[-1]
+df_list <- map(str_c("../datasets/", files_list), read_excel, skip = 1)
+industry <- bind_rows(df_list) %>% 
+  fill(시점) %>% 
+  mutate(지역 = c(rep("부산", 316), rep("경남", 320), rep("서울", 302), rep("울산", 294))) %>% 
+  mutate_at(3:44, as.numeric)
+
+
+head(edustat)
+head(industry)
+
+```
+
+### Some Wrangling
+
+``` {r wrangling}
+edustat_seoul <- edustat %>% 
+  filter(시도 == "서울" & 대계열 == "공학계열")
+
+edustat_gn <- edustat %>% 
+  filter(시도 == "경남" & 대계열 == "공학계열")
+edustat_bsn <- edustat %>% 
+  filter(시도 == "부산" & 대계열 == "공학계열")
+edustat_usn <- edustat %>% 
+  filter(시도 == "울산" & 대계열 == "공학계열")
+
+edustat_sum_seoul <- edustat_seoul %>% 
+  group_by(year, 중계열, 과정구분) %>% 
+  summarize(졸업자_남자_비중 = mean(졸업자중남자, na.rm = TRUE),
+            졸업자_여자_비중 = mean(졸업자중여자, na.rm = TRUE),
+            취업자_남자_비중 = mean(취업자중남자, na.rm = TRUE),
+            취업자_여자_비중 = mean(취업자중여자, na.rm = TRUE),
+            전체_취업률 = mean(취업률_계, na.rm = TRUE),
+            남자_취업률 = mean(남자취업률, na.rm = TRUE),
+            여자_취업률 = mean(여자취업률, na.rm = TRUE))
+
+edustat_sum_gn <- edustat_gn %>% 
+  group_by(year, 중계열, 과정구분) %>% 
+  summarize(졸업자_남자_비중 = mean(졸업자중남자, na.rm = TRUE),
+            졸업자_여자_비중 = mean(졸업자중여자, na.rm = TRUE),
+            취업자_남자_비중 = mean(취업자중남자, na.rm = TRUE),
+            취업자_여자_비중 = mean(취업자중여자, na.rm = TRUE),
+            전체_취업률 = mean(취업률_계, na.rm = TRUE),
+            남자_취업률 = mean(남자취업률, na.rm = TRUE),
+            여자_취업률 = mean(여자취업률, na.rm = TRUE))
+
+edustat_sum_bsn <- edustat_bsn %>% 
+  group_by(year, 중계열, 과정구분) %>% 
+  summarize(졸업자_남자_비중 = mean(졸업자중남자, na.rm = TRUE),
+            졸업자_여자_비중 = mean(졸업자중여자, na.rm = TRUE),
+            취업자_남자_비중 = mean(취업자중남자, na.rm = TRUE),
+            취업자_여자_비중 = mean(취업자중여자, na.rm = TRUE),
+            전체_취업률 = mean(취업률_계, na.rm = TRUE),
+            남자_취업률 = mean(남자취업률, na.rm = TRUE),
+            여자_취업률 = mean(여자취업률, na.rm = TRUE))
+
+edustat_sum_usn <- edustat_usn %>% 
+  group_by(year, 중계열, 과정구분) %>% 
+  summarize(졸업자_남자_비중 = mean(졸업자중남자, na.rm = TRUE),
+            졸업자_여자_비중 = mean(졸업자중여자, na.rm = TRUE),
+            취업자_남자_비중 = mean(취업자중남자, na.rm = TRUE),
+            취업자_여자_비중 = mean(취업자중여자, na.rm = TRUE),
+            전체_취업률 = mean(취업률_계, na.rm = TRUE),
+            남자_취업률 = mean(남자취업률, na.rm = TRUE),
+            여자_취업률 = mean(여자취업률, na.rm = TRUE))
+
+industry_subset <- industry %>% 
+  mutate(학사여성비율 = `학사(여)` / 학사) %>% 
+  rename(산업별 = `산업별(1)`) %>% 
+  filter(산업별 %in% c("기계", "디스플레이", "반도체", "섬유", "자동차", "전자", "철강", "화학", "바이오ㆍ헬스"))
+
+```
+
+
+# OLS of industrial tech talents dealing with fixed effects for Panel dataset
+
+```{r conducting_regression}
+
+# conduct ols
+
+ols <- lm(학사여성비율 ~ 지역 + 산업별, data = industry_subset)
+
+# conduct fixed effects
+
+fixed <- plm(학사여성비율 ~ 지역 + 산업별, index = "시점", model = "within", data = industry_subset)
+summary(fixed)
+fixef(fixed)
+
+pFtest(fixed, ols)
+fixed2 <- plm(학사여성비율 ~ 지역 * 산업별, index = "시점", model = "within", data = industry_subset)
+summary(fixed2)
+
+
+# random effects
+
+#random <- plm(학사여성비율 ~ 지역 + 산업별, index = "시점", model = "random", data = industry_subset)
+
+
+
+```
